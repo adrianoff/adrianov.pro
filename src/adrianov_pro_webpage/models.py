@@ -7,7 +7,7 @@ class Category(models.Model):
         return self.name
 
 class Page(models.Model):
-    question = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     title = models.CharField(max_length=255)
     url = models.CharField(max_length=255)
     content = models.TextField()
