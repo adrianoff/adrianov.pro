@@ -41,7 +41,7 @@ $(document).ready(function () {
         });
     }
 
-    // PORTFOLIO CONTENT  
+    // PORTFOLIO CONTENT
     $('#grid-container').cubeportfolio({
         layoutMode: 'grid',
         filters: '#filters-container',
@@ -69,7 +69,7 @@ $(document).ready(function () {
                     caption: '',
                     gapHorizontal: 50,
                 }
-            }],            
+            }],
         singlePageCallback: function (url, element) {
             var t = this;
             $.ajax({
@@ -92,41 +92,9 @@ $(document).ready(function () {
                     loadItems: 3,
                 }
             }
-    }); 
+    });
 
-    // BLOG CONTENT  
-    $('#grid-blog').cubeportfolio({
-        layoutMode: 'grid',
-        gridAdjustment: 'responsive',
-        gapVertical: 0,
-        gapHorizontal: 0,
-        mediaQueries: [{
-                width: 700,
-                cols: 3,
-            }, {
-                width: 480,
-                cols: 2,
-                options: {
-                    caption: '',
-                    gapHorizontal: 30,
-                    gapVertical: 20,
-                }
-            }, {
-                width: 320,
-                cols: 1,
-                options: {
-                    caption: '',
-                    gapHorizontal: 50,
-                }
-            }],
-            plugins: {
-                loadMore: {
-                    element: '#load-posts',
-                    action: 'click',
-                    loadItems: 3,
-                }
-            }
-    }); 
+
 
     // GALLERY WIDGET  
     $('#widget-gallery').cubeportfolio({
