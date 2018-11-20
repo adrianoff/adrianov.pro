@@ -7,16 +7,16 @@
 <title>Pavel Adrianov. Data Scientist.</title>
 <meta charset="UTF-8">
 <meta name="description" content="Pavel Adrianov. Data Scientist. - Resume & vCard">
-<meta name="keywords" content="personal, vcard, portfolio">
+<meta name="keywords" content="personal, vcard, resume">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+{% load static %}
 <!-- Favicon
 ================================================== -->
-<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="{% static 'favicon.png' %}" rel="shortcut icon" type="image/x-icon" />
 
 <!-- CSS
 ================================================== -->
-{% load static %}
 <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"/>
 <link rel="stylesheet" href="{% static 'css/reset.css' %}"/>
 <link rel="stylesheet" href="{% static 'cubeportfolio/css/cubeportfolio.min.css' %}"/>
@@ -41,11 +41,6 @@
 
 </head>
 <body>
- <!-- Preloading -->
-<div id="preloader">
-    <div class="spinner">
-    </div>
-</div>
 
 <!-- Wrapper -->
 <div class="wrapper top_60 container">
@@ -69,7 +64,9 @@
             <li><p><span>Email:</span> <a href="emailto:pavel@adrianov.pro">pavel@adrianov.pro</a></p></li>
         </ul>
         <div class="col-md-12">
-            <button class="site-btn icon">Download Cv <i class="fa fa-download" aria-hidden="true"></i></button>
+            <button class="site-btn icon" onclick="window.open('{% static 'files/Adrianov_Pavel_Resume.pdf' %}','_blank');" >
+                Download Cv <i class="fa fa-download" aria-hidden="true"></i>
+            </button>
         </div>
     </div>
 </div>
@@ -120,15 +117,33 @@
                     <section class="about-me line col-md-12 padding_30 padbot_45">
                     <div class="section-title"><span></span><h2>About Me</h2></div>
                     <p class="top_30">
-                        <b>Senior software developer with 12 year of solid experience in IT.</b>
-                        My main passion for now is machine learning and data science. Also I have a lot of experience in PHP and Python development.
-                        Looking for product manager, team leader, data-scientist position. I am familar with machine learning algorithms and python libraries
+                        Hi! <b>I  am senior software developer with 12 year of solid experience in IT.</b>
+                        My main interest for now is machine learning and data science. Also I have a lot of experience in PHP and Python development.
+                        Looking for product manager, team leader, data-scientist position. I am familiar with machine learning algorithms and python libraries
                         such as Pandas, Numpy, Scikit-learn, XGBoost, etc.
 
                         Also I have a lot of experience with PHP frameworks such as Symfony and Laravel. I have build several highload and big data projects.
 
+                        <br><br>
+                        Checkout my accomplishments and certificates: <br>
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/7YVTA6XT5Z9H" target="_blank">
+                            Machine Learning and Data Science Specialization.
+                        </a><br>
+
+                        <a href="https://www.coursera.org/account/accomplishments/records/3MCLDSDVCQRY" target="_blank">
+                            Introduction to Machine Learning
+                        </a><br>
+
+                        <a href="https://www.coursera.org/account/accomplishments/records/TAP4VKTPCLP8" target="_blank">
+                            Big Data Analysis: Hive, Spark SQL, DataFrames and GraphFrames
+                        </a><br>
+
+                        <a href="https://www.coursera.org/account/accomplishments/records/W59WWG5P47VF" target="_blank">
+                            Big Data Essentials: HDFS, MapReduce and Spark RDD
+                        </a><br>
+
                         <br>
-                        <br> Your can contact with me via email for hiring.
+                        You can contact with me via <b>email</b> for hiring or any other questions.
                 </section>
                 </div>
                 <!-- My Services Section -->
