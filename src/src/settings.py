@@ -24,7 +24,7 @@ SECRET_KEY = 'rf&&&*!hyw5ryabn_pn36x4^-8jjt(39=nqvkk*tb+tk*ujt-6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['*', 'adrianov.pro']
+ALLOWED_HOSTS = ['adrianov-local.pro', 'adrianov.pro']
 
 
 # Application definition
