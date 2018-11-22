@@ -123,3 +123,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/adrianov_pro_webpage/static/'
+STATIC_ROOT = '/home/adrianoff/dev/projects/adrianov.pro/src/adrianov_pro_webpage/static'
