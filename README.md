@@ -8,4 +8,6 @@ How to create virtual env:
 	
 	pip install -r requirements.txt
 
-To start uwsgi use command: uwsgi --ini ./src/src/uwsgi.ini
+To start uwsgi use command: 
+	
+	uwsgi --ini ./src/src/uwsgi.ini
