@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'rf&&&*!hyw5ryabn_pn36x4^-8jjt(39=nqvkk*tb+tk*ujt-6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['adrianov-local.pro', 'adrianov.pro']
 
 
