@@ -1,6 +1,7 @@
 adrianov.pro webpage
 
 How to create virtual env: 
+
 	virtualenv -p /usr/bin/python3 venv/
 	
 	source env/bin/activate
