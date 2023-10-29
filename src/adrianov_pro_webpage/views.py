@@ -8,7 +8,8 @@ def index(request):
     template = loader.get_template('main.html')
     context = {}
 
-    return HttpResponse(template.render(context, request))
+    return HttpResponse("UNDER CONSTRUCTION.")
+    #return HttpResponse(template.render(context, request))
 
 def page(request, category, url):
     try:
@@ -21,14 +22,17 @@ def page(request, category, url):
         'page': page
     }
 
-    return HttpResponse(template.render(context, request))
+    return HttpResponse("UNDER CONSTRUCTION.")
+    #return HttpResponse(template.render(context, request))
 
 def page404(request):
     template = loader.get_template('404.html')
 
-    return HttpResponse(template.render({}, request))
+    return HttpResponse("UNDER CONSTRUCTION.")
+    #return HttpResponse(template.render({}, request))
 
 def page500(request):
     template = loader.get_template('500.html')
 
-    return HttpResponse(template.render({}, request))
+    return HttpResponse("UNDER CONSTRUCTION.")
+    #return HttpResponse(template.render({}, request))
